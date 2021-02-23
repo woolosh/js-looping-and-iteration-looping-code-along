@@ -1,17 +1,10 @@
 // // // Code your solutions in this file
-// const personToThank = ["Lisa", "Kaitlin", "Jan"], "birthday";
 
-// function writeCards(person, event) {
-//   for (let i = 0; i < personToThank.length; i++) {
-//     console.log(
-//       `Thank you, ${person}, for the wonderful ${event} gift!`
-//     );
-//   }
-
-//   return personToThank;
-// }
+const person = ["Lisa", "Kaitlin", "Jan"];
+const event = "birthday";
 
 function writeCards(person, event) {
+  console.log(person);
   let thankYouCards = [];
   for (let i = 0; i < person.length; i++) {
     thankYouCards.push(
@@ -21,10 +14,12 @@ function writeCards(person, event) {
   return thankYouCards;
 }
 
-function countDown(startingNumber) {
-  while (startingNumber > 0) {
-    console.log(startingNumber);
-    startingNumber -= 1;
-  }
-  console.log(startingNumber);
-}
+writeCards(person, event);
+
+// function countDown(num) {
+//   while (num > 0) {
+//     console.log(num);
+//     num -= 1;
+//   }
+//   console.log(num);
+// }
